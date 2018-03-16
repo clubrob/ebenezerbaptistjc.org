@@ -1,0 +1,12 @@
+#splash {
+  background: url('../images/ebenezerbaptistjc4.jpg');
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+
+  .container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}

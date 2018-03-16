@@ -1,0 +1,17 @@
+//Base Styles
+.section {
+  min-height: 100vh;
+}
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 3rem;
+}
+
+//Medium Desktop
+@media all and (min-width: $brkMdDesk) { 
+  .container {
+      max-width: 1000px;
+      padding: 0;
+  }
+} 
