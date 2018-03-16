@@ -1,0 +1,65 @@
+.icon {
+    font-size: 10px;
+}
+
+.icon:before {
+    content:' ';
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("../svg/sprite.svg");
+    background-repeat: no-repeat;
+    background-size: 31em 38.6em;
+}
+
+.no-svg .icon:before {
+    background-image: url("../svg/sprite.png");
+}
+
+
+
+  .icon.bulletin:before {
+      background-position: 0em 0em;
+      width: 10.2em;
+      height: 6.8em;
+  }
+
+
+
+
+  .icon.contact:before {
+      background-position: 0em -6.8em;
+      width: 9em;
+      height: 6.8em;
+  }
+
+
+
+
+  .icon.events:before {
+      background-position: 0em -13.6em;
+      width: 7.9em;
+      height: 9.1em;
+  }
+
+
+
+
+  .icon.logo:before {
+      background-position: 0em -22.7em;
+      width: 31em;
+      height: 6.8em;
+  }
+
+
+
+
+  .icon.our-story:before {
+      background-position: 0em -29.5em;
+      width: 7.9em;
+      height: 9.1em;
+  }
+
+
+
+
+

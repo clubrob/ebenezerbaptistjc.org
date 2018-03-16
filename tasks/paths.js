@@ -11,6 +11,10 @@ const paths = {
     src: 'src/markup/**/*.html',
     dest: 'dist',
   },
+  svg: {
+    src: 'src/images/svg/**/*.svg',
+    dest: 'dist/images',
+  },
   node: {
     src: 'node_modules',
   },
