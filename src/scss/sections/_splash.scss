@@ -1,29 +1,51 @@
 #splash {
-  background: url('../images/ebenezerbaptistjc.jpg');
-  background-size: cover;
-  height: 100vh;
-  position: relative;
+  @extend .parallax;
+  background-image: url('../images/ebenezerbaptistjc.jpg');
 
-  .container {
-    position: absolute;
-    right: 0;
-    bottom: 100px;
-    width: 50%;
-
-    .verse {
-      blockquote {
-        @extend .headlineTypography;
+  .splash-box {
+    position: relative;
+    height: 100vh;
+    .splash-verse {
+      position: absolute;
+      right: 10%;
+      bottom: 100px;
+      width: 50%;
+      .verse {
+        blockquote {
+          @extend .headlineTypography;
+          font-weight: 700;
+          font-style: italic;
+          color: #fff;
+          text-align: center;
+          font-size: 4.6rem;
+          letter-spacing: 1px;
+          text-shadow: 2px 2px #000;
+          margin: 1rem 0;
+        }
+        figcaption {
+          text-align: right;
+          font-size: 1.3rem;
+        }
+        color: #fff;
+      }
+    }
+    .splash-learn {
+      position: absolute;
+      bottom: 0;
+      height: 70px;
+      width: 100%;
+      background: #7CA4C2;
+      border-bottom: 2px solid #B6B8CC;
+      p {
         text-align: center;
-        font-size: 4.6rem;
-        letter-spacing: 1px;
-        text-shadow: 2px 2px #000;
-        margin: 1rem 0;
+        a {
+          color: #fff;
+          text-transform: uppercase;
+          &:hover {
+            text-decoration: none;
+          }
+        }
       }
-      figcaption {
-        text-align: right;
-        font-size: 1.3rem;
-      }
-      color: #fff;
     }
   }
 }

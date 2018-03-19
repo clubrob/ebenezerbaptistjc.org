@@ -8,41 +8,172 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <svg style="display: none;">
+        <defs>
+          <!-- about viewBox="0 0 79 91" -->
+          <symbol id="aboutSVG">
+          <path fill="#B5B5B5" d="M78.75 63.2812c0 1.4063-.5273 2.6368-1.582 3.3399-.3516 1.4062-.5274 3.5156-.5274 6.5039 0 3.1641.1758 5.2734.5274 6.5039 1.0547 1.0547 1.582 2.1094 1.582 3.3399v2.8124c0 1.2305-.5273 2.2852-1.2305 2.9883C76.6406 89.6484 75.5859 90 74.5312 90H16.875c-4.7461 0-8.78906-1.582-11.95312-4.9219C1.58203 81.9141 0 77.8711 0 73.125v-56.25c0-4.5703 1.58203-8.61328 4.92188-11.95312C8.08594 1.75781 12.1289 0 16.875 0h57.6562c1.0547 0 2.1094.52734 2.9883 1.23047.7032.87891 1.2305 1.93359 1.2305 2.98828V63.2812zM22.5 23.5547v3.5156c0 .3516 0 .5274.3516.7031.1757.3516.3515.3516.7031.3516h37.2656c.1758 0 .3516 0 .7031-.3516.1758-.1757.3516-.3515.3516-.7031v-3.5156c0-.1758-.1758-.3516-.3516-.7031-.3515-.1758-.5273-.3516-.7031-.3516H23.5547c-.3516 0-.5274.1758-.7031.3516-.3516.3515-.3516.5273-.3516.7031zm0 11.25v3.5156c0 .3516 0 .5274.3516.7031.1757.3516.3515.3516.7031.3516h37.2656c.1758 0 .3516 0 .7031-.3516.1758-.1757.3516-.3515.3516-.7031v-3.5156c0-.1758-.1758-.3516-.3516-.7031-.3515-.1758-.5273-.3516-.7031-.3516H23.5547c-.3516 0-.5274.1758-.7031.3516-.3516.3515-.3516.5273-.3516.7031zM66.9727 78.75c-.1758-1.4062-.1758-3.3398-.1758-5.625 0-2.1094 0-4.043.1758-5.625H16.875c-1.582 0-2.9883.7031-4.043 1.7578s-1.582 2.461-1.582 3.8672c0 1.582.5273 2.9883 1.582 4.043s2.461 1.582 4.043 1.582h50.0977z"/>
+          </symbol>
+          <!-- events viewBox="0 0 79 91" -->
+          <symbol id="eventsSVG">
+          <path fill="#B5B5B5" d="M26.0156 50.625c.5274 0 1.0547-.1758 1.4063-.5273.3515-.3516.7031-.8789.7031-1.5821v-7.0312c0-.5274-.3516-1.0547-.7031-1.4063-.3516-.3515-.8789-.7031-1.4063-.7031h-7.0312c-.7032 0-1.2305.3516-1.5821.7031-.3515.3516-.5273.8789-.5273 1.4063v7.0312c0 .7032.1758 1.2305.5273 1.5821.3516.3515.8789.5273 1.5821.5273h7.0312zM45 48.5156c0 .7032-.3516 1.2305-.7031 1.5821-.3516.3515-.8789.5273-1.4063.5273h-7.0312c-.7032 0-1.2305-.1758-1.5821-.5273-.3515-.3516-.5273-.8789-.5273-1.5821v-7.0312c0-.5274.1758-1.0547.5273-1.4063.3516-.3515.8789-.7031 1.5821-.7031h7.0312c.5274 0 1.0547.3516 1.4063.7031.3515.3516.7031.8789.7031 1.4063v7.0312zm16.875 0c0 .7032-.3516 1.2305-.7031 1.5821-.3516.3515-.8789.5273-1.4063.5273h-7.0312c-.7032 0-1.2305-.1758-1.5821-.5273-.3515-.3516-.5273-.8789-.5273-1.5821v-7.0312c0-.5274.1758-1.0547.5273-1.4063.3516-.3515.8789-.7031 1.5821-.7031h7.0312c.5274 0 1.0547.3516 1.4063.7031.3515.3516.7031.8789.7031 1.4063v7.0312zM45 65.3906c0 .7032-.3516 1.2305-.7031 1.5821-.3516.3515-.8789.5273-1.4063.5273h-7.0312c-.7032 0-1.2305-.1758-1.5821-.5273-.3515-.3516-.5273-.8789-.5273-1.5821v-7.0312c0-.5274.1758-1.0547.5273-1.4063.3516-.3515.8789-.7031 1.5821-.7031h7.0312c.5274 0 1.0547.3516 1.4063.7031.3515.3516.7031.8789.7031 1.4063v7.0312zm-16.875 0c0 .7032-.3516 1.2305-.7031 1.5821-.3516.3515-.8789.5273-1.4063.5273h-7.0312c-.7032 0-1.2305-.1758-1.5821-.5273-.3515-.3516-.5273-.8789-.5273-1.5821v-7.0312c0-.5274.1758-1.0547.5273-1.4063.3516-.3515.8789-.7031 1.5821-.7031h7.0312c.5274 0 1.0547.3516 1.4063.7031.3515.3516.7031.8789.7031 1.4063v7.0312zm33.75 0c0 .7032-.3516 1.2305-.7031 1.5821-.3516.3515-.8789.5273-1.4063.5273h-7.0312c-.7032 0-1.2305-.1758-1.5821-.5273-.3515-.3516-.5273-.8789-.5273-1.5821v-7.0312c0-.5274.1758-1.0547.5273-1.4063.3516-.3515.8789-.7031 1.5821-.7031h7.0312c.5274 0 1.0547.3516 1.4063.7031.3515.3516.7031.8789.7031 1.4063v7.0312zM78.75 19.6875c0-2.2852-.8789-4.2187-2.4609-5.9766-1.7579-1.582-3.6914-2.4609-5.9766-2.4609H61.875V2.10938c0-.52735-.3516-1.05469-.7031-1.40625C60.8203.35156 60.293 0 59.7656 0h-7.0312c-.7032 0-1.2305.35156-1.5821.70313-.3515.35156-.5273.8789-.5273 1.40625V11.25h-22.5V2.10938c0-.52735-.3516-1.05469-.7031-1.40625C27.0703.35156 26.543 0 26.0156 0h-7.0312c-.7032 0-1.2305.35156-1.5821.70313-.3515.35156-.5273.8789-.5273 1.40625V11.25H8.4375c-2.46094 0-4.39453.8789-5.97656 2.4609C.70313 15.4688 0 17.4023 0 19.6875v61.875c0 2.4609.70313 4.3945 2.46094 5.9766C4.04297 89.2969 5.97656 90 8.4375 90h61.875c2.2852 0 4.2187-.7031 5.9766-2.4609 1.582-1.5821 2.4609-3.5157 2.4609-5.9766v-61.875zm-8.4375 60.8203c0 .3516-.1758.5274-.3516.7031-.3515.3516-.5273.3516-.7031.3516H9.49219c-.35157 0-.52735 0-.70313-.3516-.35156-.1757-.35156-.3515-.35156-.7031V28.125h61.875v52.3828z"/>
+          </symbol>
+          <!-- bulletin viewBox="0 0 102 68" -->
+          <symbol id="bulletinSVG">
+          <path fill="#B5B5B5" d="M97.0312 0c1.0547 0 2.1094.52734 2.9888 1.23047.703.87891 1.23 1.93359 1.23 2.98828V63.2812c0 1.2305-.527 2.2852-1.23 2.9883-.8794.8789-1.9341 1.2305-2.9888 1.2305H9.84375c-2.8125 0-5.09766-.8789-7.03125-2.8125C.8789 62.7539 0 60.4688 0 57.6562V9.84375c0-1.05469.35156-2.10937 1.23047-2.98828C1.93359 6.15234 2.98828 5.625 4.21875 5.625h7.55855c.5274-1.58203 1.5821-2.98828 2.9883-4.04297C16.1719.52734 17.9297 0 19.6875 0h77.3437zM8.4375 57.6562c0 .3516 0 .7032.35156 1.0547.35156.3516.70313.3516 1.05469.3516.35155 0 .52735 0 .87895-.3516.3515-.3515.5273-.7031.5273-1.0547V14.0625H8.4375v43.5937zm84.375 1.4063V8.4375h-73.125v49.2187l-.1758 1.4063h73.3008zM30.2344 37.9688c-.7032 0-1.2305-.1758-1.5821-.5274-.3515-.3516-.5273-.8789-.5273-1.582v-16.875c0-.5274.1758-1.0547.5273-1.4063.3516-.3515.8789-.7031 1.5821-.7031h23.9062c.5274 0 1.0547.3516 1.4063.7031.3515.3516.7031.8789.7031 1.4063v16.875c0 .7031-.3516 1.2304-.7031 1.582-.3516.3516-.8789.5274-1.4063.5274H30.2344zm4.9218-14.0626v7.0313h14.0626v-7.0313H35.1562zM28.125 48.5156c0 .7032.1758 1.2305.5273 1.5821.3516.3515.8789.5273 1.5821.5273h23.9062c.5274 0 1.0547-.1758 1.4063-.5273.3515-.3516.7031-.8789.7031-1.5821v-4.2187c0-.5274-.3516-1.0547-.7031-1.4063-.3516-.3515-.8789-.7031-1.4063-.7031H30.2344c-.7032 0-1.2305.3516-1.5821.7031-.3515.3516-.5273.8789-.5273 1.4063v4.2187zm33.75 0c0 .7032.1758 1.2305.5273 1.5821.3516.3515.8789.5273 1.5821.5273h18.2812c.5274 0 1.0547-.1758 1.4063-.5273.3515-.3516.7031-.8789.7031-1.5821v-4.2187c0-.5274-.3516-1.0547-.7031-1.4063-.3516-.3515-.8789-.7031-1.4063-.7031H63.9844c-.7032 0-1.2305.3516-1.5821.7031-.3515.3516-.5273.8789-.5273 1.4063v4.2187zm0-25.3125c0 .7031.1758 1.2305.5273 1.5821.3516.3515.8789.5273 1.5821.5273h18.2812c.5274 0 1.0547-.1758 1.4063-.5273.3515-.3516.7031-.879.7031-1.5821v-4.2187c0-.5274-.3516-1.0547-.7031-1.4063-.3516-.3515-.8789-.7031-1.4063-.7031H63.9844c-.7032 0-1.2305.3516-1.5821.7031-.3515.3516-.5273.8789-.5273 1.4063v4.2187zm0 12.6563c0 .7031.1758 1.2304.5273 1.582.3516.3516.8789.5274 1.5821.5274h18.2812c.5274 0 1.0547-.1758 1.4063-.5274.3515-.3516.7031-.8789.7031-1.582v-4.2188c0-.5273-.3516-1.0547-.7031-1.4062-.3516-.3516-.8789-.7032-1.4063-.7032H63.9844c-.7032 0-1.2305.3516-1.5821.7032-.3515.3515-.5273.8789-.5273 1.4062v4.2188z"/>
+          </symbol>
+          <!-- contact viewBox="0 0 90 68" -->
+          <symbol id="contactSVG">
+          <path fill="#B5B5B5" d="M81.5625 0c2.2852 0 4.2187.8789 5.9766 2.46094C89.1211 4.21875 90 6.15234 90 8.4375v50.625c0 2.4609-.8789 4.3945-2.4609 5.9766-1.7579 1.7578-3.6914 2.4609-5.9766 2.4609H8.4375c-2.46094 0-4.39453-.7031-5.97656-2.4609C.70313 63.457 0 61.5234 0 59.0625V8.4375c0-2.28516.70313-4.21875 2.46094-5.97656C4.04297.87891 5.97656 0 8.4375 0h73.125zm0 8.4375H8.4375v7.207c4.043 3.3399 11.9531 9.4922 23.7305 18.6328l1.582 1.4063c2.2852 2.1094 4.2188 3.5156 5.625 4.2187 2.1094 1.5821 4.043 2.2852 5.625 2.2852 1.4062 0 3.3398-.7031 5.625-2.2852 1.4062-.7031 3.1641-2.1093 5.625-4.2187l1.582-1.4063c11.6016-8.9648 19.5118-15.1171 23.7305-18.6328v-7.207zm-73.125 50.625h73.125V26.3672L61.1719 42.5391c-2.9883 2.4609-5.4492 4.2187-7.2071 5.2734-3.164 1.9336-6.1523 2.8125-8.9648 2.8125s-5.9766-.8789-9.1406-2.8125c-1.7578-1.0547-4.2188-2.8125-7.2071-5.2734L8.4375 26.3672v32.6953z"/>
+          </symbol>
+        </defs>
+      </svg>
   <nav id="navbar">
-    <div class="container">
-      <div class="row">
-        <div class="col40">
-          <h1 class="logo"><img src="images/logo.svg" alt="Ebenezer Baptist Church, Jefferson County, Florida"></h1>
-        </div>
-        <div class="col60">
-          <ul class="nav-menu">
-            <li><a href="#">Our Story</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Bulletin</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
+    <div class="row">
+      <div class="col40">
+        <h1 class="logo"><a href="/"><img src="images/svg/logo.svg" alt="Ebenezer Baptist Church, Jefferson County, Florida"></a></h1>
+      </div>
+      <div class="col60">
+        <ul class="nav-menu">
+          <li><a href="#about"><span><svg viewBox="0 0 79 91" class="nav-icon"><use xlink:href="#aboutSVG"></use></svg></span><br>Our Story</a></li>
+          <li><a href="#events"><span><svg viewBox="0 0 79 91" class="nav-icon"><use xlink:href="#eventsSVG"></use></svg></span><br>Events</a></li>
+          <li><a href="#bulletin"><span><svg viewBox="0 0 102 68" class="nav-icon"><use xlink:href="#bulletinSVG"></use></svg></span><br>Bulletin</a></li>
+          <li><a href="#contact"><span><svg viewBox="0 0 90 68" class="nav-icon"><use xlink:href="#contactSVG"></use></svg></span><br>Contact Us</a></li>
+        </ul>
       </div>
     </div>
   </nav>
-  <section id="splash">
-    <div class="container">
-      <figure class="verse">
-        <blockquote>I can do all things through Christ, who strengthens me</blockquote>
-        <figcaption>Philippians 4:13</figcaption>
-      </figure>
+  <section id="splash" class="section">
+    <div class="splash-box">
+      <div class="splash-verse">
+        <figure class="verse">
+          <blockquote>I can do all things through Christ, who strengthens me</blockquote>
+          <figcaption>Philippians 4:13</figcaption>
+        </figure>
+      </div>
     </div>
   </section>
-  <section class="about container">
 
+  <section id="about" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="">
+          <h2>Our Story</h2>
+          <p>Ebenezer Baptist is a small church in a beautiful rural setting in northern Florida, just 30 minutes east of Tallahassee and ten minutes south of Monticello. We are also about 30 minutes south of Thomasville, GA. The church was established in 1828; and the first permanent Missionary Baptist Association, forerunner of the Baptist State Convention, was organized here in 1843. Ebenezer is very action oriented, participating in local, state, national, and global mission projects. We are aligned with the Cooperative Baptist Fellowship at the state and national levels.</p>
+          <h4>Our Mission</h4>
+          <p><small>Our mission is to share Christ with as many people as possible; to commune with God through worship; to seek God’s leadership; to minister unselfishly to the community and to the world; to grow in the knowledge of God and man and help others grow in this way; and to live with Christ as our model. We pray that we may live our words and be faithful to Christ, who gave everything for us. At Ebenezer, every member is a minster. It is our desire that Ebenezer be a place of fellowship, love, and grace; a place where everyone feels at home.</small></p>
+        </div>
+      </div>
+    </div>
   </section>
-  <section class="events container">
 
+  <section id="events" class="section">
+    <div class="container">
+      <div class="row">
+        <h2>Events</h2>
+      </div>
+      <div class="row">
+        <div class="col50">
+          <p><strong><em>All are welcome to join us for meetings and special events.</em></strong></p>
+          <h5>Meeting Times</h5>
+            <ul>
+              <li>
+                Sunday School for all ages - 10:00 a.m.
+              </li>
+              <li>
+                Sunday Morning Service - 11:00 a.m.
+              </li>
+              <li>
+                1st Wednesday of each month	Family Supper
+              </li>
+              <li>
+                Wednesday Night Bible Study - 7:00 p.m.
+              </li>
+            </ul>
+          <h5>Special Events</h5>
+          <ul>
+              <li>
+                Homecoming - First Sunday in October with dinner on the grounds
+              </li>
+              <li>
+                Easter - Sunrise Service, Regular Service, dinner on the grounds, and egg hunt
+              </li>
+          </ul>
+        </div>
+        <div class="col50">
+          <div class="events-calendar">
+            <!-- Google Calendar embed -->
+            <p>
+              <iframe src="https://calendar.google.com/calendar/embed?showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=8rilrthcsovbbevdsdba8dl7vg%40group.calendar.google.com&amp;color=%2342104A&amp;ctz=America%2FNew_York" style="border-width:0" frameborder="0" scrolling="no"></iframe>
+            </p>          
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-  <section class="contact container">
 
+  <section id="bulletin" class="section">
+    <div class="container">
+      <div class="row">
+        <div>
+          <h2>Bulletin</h2>
+          <p>Est labore officia eiusmod deserunt est laboris velit duis fugiat.</p>
+          <p><a href="#" class="button">Download</a></p>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <section id="contact" class="section">
+    <div class="contact-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3439.0854401707866!2d-83.88872068487504!3d30.462017981732174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88ec3ed9051b0937%3A0x58119363504de12d!2s446+Hatchett%2C+Lamont%2C+FL+32336!5e0!3m2!1sen!2sus!4v1521488503995" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col50">
+          <h2>Contact Us</h2>
+          <p>
+            <strong>Physical Address</strong><br>
+            446 Hatchett Rd. <br>
+            Lamont, FL 32336
+          </p>
+          <p>
+            <strong>Physical Address</strong><br>
+            446 Hatchett Rd. <br>
+            Lamont, FL 32336
+          </p>
+          <p>
+            <strong>Mailing Address</strong><br>
+            PO Box 652 <br>
+            Monticello, FL 32345
+          </p>
+          <p>
+            <strong>Phone</strong><br>
+          
+          </p>
+          <p>
+            <strong>Email</strong><br>
+          </p>
+        </div>
+        <div class="col50">
+          <h2>Pastor</h2>
+          <p>Andy Creel</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col50">
+          <p>© 2018 Ebenezer Baptist Church, Jefferson County, FL</p>
+        </div>
+        <div class="col50">
+          <p>Website by <a href="https://roblindsey.com" target="_blank">Rob Lindsey Design</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="js/bundle.js"></script>
 </body>
 </html>

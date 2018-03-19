@@ -1,22 +1,6 @@
 //Breakpoints
-$brkMdPhone: 415px;
+$brkMdPhone: 768px;
 $brkLgPhone: 575px;
 $brkTab: 768px;
 $brkMdDesk: 991px;
 $brkLgDesk: 1400px;
-
-//Styles for @extend
-.frontSectionStyles{
-  background: #fff;
-  color: #505050;
-  
-  padding-top: 60px;
-  position: relative;
-  z-index: 2;
-}
-
-.headlineTypography {
-  font-family: 'Playfair Display', serif;
-  font-weight: bold;
-  font-style: italic;
-}

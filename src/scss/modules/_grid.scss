@@ -1,4 +1,23 @@
 //Grid 
+.container {
+  
+  width: 100%;
+  background-color: #fff;
+}
+
+//Medium Desktop
+@media all and (min-width: $brkMdDesk) { 
+  .container {
+      // 
+      // padding: 0;
+  }
+} 
+
+.row {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 3rem;
+}
 
 //Tablet
 @media all and (min-width: $brkMdPhone) { 

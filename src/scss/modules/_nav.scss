@@ -1,9 +1,12 @@
 #navbar {
-  position: sticky;
+  position: fixed;
+  z-index: 1;
   top: 0;
-  background: white;
+  background: rgba(255,255,255,.9);
+  height: 100px;
+  overflow: hidden;
   width: 100%;
-  padding-top: 2rem;
+  border-bottom: 1px solid #B6B8CC;
 
   .logo {
     margin: 0;
@@ -14,17 +17,31 @@
     li {
       display: inline-block;
       a {
-        padding: 2rem;
+        padding: 1rem 2.1rem;
         font-family: 'Source Sans Pro', sans-serif;
         text-transform: uppercase;
+        text-align: center;
+        display: block;
         color: #5C5C5C;
         font-weight: bold;
         font-size: 1.4rem;
         letter-spacing: .15em;
         &:hover {
           text-decoration: none;
+
+        }
+        .nav-icon {
+          display: inline-block;;
+          height: 24px;
+          width: 24px;
         }
       }
     }
   }
+}
+#navbar>.row {
+  padding: 1.5rem 0 0;
+}
+#navbar>.row>.col60 {
+  text-align: right;
 }
