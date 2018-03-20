@@ -1,48 +1,51 @@
 #splash {
   @extend .parallax;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-image: url('../images/ebenezerbaptistjc.jpg');
-
   .splash-box {
     position: relative;
     height: 100vh;
     .splash-verse {
       position: absolute;
-      right: 10%;
-      bottom: 100px;
-      width: 50%;
+      bottom: 4rem;
+      width: 100%;
       .verse {
         blockquote {
           @extend .headlineTypography;
           font-weight: 700;
           font-style: italic;
-          color: #fff;
+          color: $white;
           text-align: center;
-          font-size: 4.6rem;
-          letter-spacing: 1px;
-          text-shadow: 2px 2px #000;
+          font-size: 3rem;
+          letter-spacing: .1em;
+          text-shadow: 2px 2px $black;
           margin: 1rem 0;
         }
         figcaption {
           text-align: right;
-          font-size: 1.3rem;
+          font-size: 1.1rem;
         }
-        color: #fff;
+        color: $white;
       }
     }
-    .splash-learn {
-      position: absolute;
-      bottom: 0;
-      height: 70px;
-      width: 100%;
-      background: #7CA4C2;
-      border-bottom: 2px solid #B6B8CC;
-      p {
-        text-align: center;
-        a {
-          color: #fff;
-          text-transform: uppercase;
-          &:hover {
-            text-decoration: none;
+  }
+}
+
+//Tablet
+@media all and (min-width: $brkTab) { 
+  #splash {
+    .splash-box {
+      .splash-verse {
+        right: 10%;
+        bottom: 100px;
+        width: 50%;
+        .verse {
+          blockquote {
+            font-size: 4.6rem;
+          }
+          figcaption {
+            font-size: 1.3rem;
           }
         }
       }

@@ -16,6 +16,7 @@ body {
 }
 body, html {
     height: 100%;
+    width: 100%;
 }
 ul {
     list-style-type: none;
@@ -24,7 +25,7 @@ ul {
 }
 p, ol, ul, pre, address, blockquote, dl, form, small {
     font-size: 1.6rem;
-    color: #363636;
+    color: $darkGray;
 }
 p, ul, ol {
     line-height: 1.8;
@@ -35,7 +36,8 @@ pre {
 h1, h2, h3, h4, h5, h6 {
     @extend .headlineTypography;
     line-height: 1.8;
-    margin: 1em 0 0;
+    padding: 1em 0 0;
+    margin: 0;
 }
 h1 { font-size: 4.5rem; }
 h2 { font-size: 4rem; }
@@ -46,6 +48,7 @@ h6 { font-size: 2rem; }
 
 a {
     text-decoration: none;
+    color: darken($blue, 10%);
     &:hover {
         text-decoration: underline;
     }

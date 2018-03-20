@@ -1,4 +1,30 @@
+#contact {
+  @extend .parallaxStripe;
+  &::before {
+    background-color: $purple;
+    z-index: 1;
+    height: $navbarMobileHeight;
+  }
+  &::after {
+    height: 50vh;
+  }
+}
 .contact-map {
   @extend .responsiveEmbed;
-  padding-top: 30%;
+  padding-top: 50%;
+}
+
+//Tablet
+@media all and (min-width: $brkTab) { 
+  #contact {
+    &::before {
+      height: $navbarDesktopHeight;
+    }
+    &::after {
+      height: 70vh;
+    }
+  }
+  .contact-map {
+    padding-top: 30%;
+  }
 }

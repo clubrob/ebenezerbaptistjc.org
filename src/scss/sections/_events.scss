@@ -1,8 +1,50 @@
 #events {
   @extend .parallax;
-  background-image: url('../images/ebenezerbaptistjc3.jpg');
+  @extend .parallaxGap;
+  @extend .parallaxStripe;
+  &::before {
+    background-color: $green;
+    z-index: 1;
+    height: $navbarMobileHeight;
+  }
+  &::after {
+    height: 50vh;
+  }
+  ul {
+    list-style: disc;
+    padding-left: 4rem;
+  }
+  .cal-col {
+    padding: 0 8%;
+  }
+  .cal-divider {
+    margin: 2rem;
+    border: 0;
+    height: 1px;
+    background: $lightGray;
+    background-image: linear-gradient(to right, $lightGray, $darkGray, $lightGray);
+  }
 }
 .events-calendar {
   @extend .responsiveEmbed;
   padding-top: 80%;
+}
+
+//Tablet
+@media all and (min-width: $brkTab) { 
+  #events {
+    background-image: url('../images/ebenezerbaptistjc3.jpg');
+    &::before {
+      height: $navbarDesktopHeight;
+    }
+    &::after {
+      height: 70vh;
+    }
+    .cal-col {
+      padding: 0 2%;
+    }
+    .cal-divider {
+      display: none;
+    }
+  }
 }

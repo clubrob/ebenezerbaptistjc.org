@@ -1,0 +1,28 @@
+#footer {
+  p, a {
+    color: $white;
+    font-size: 1.4rem;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .container {
+    background-color: darken($blue, 30%);
+    .row {
+      padding-bottom: 0;
+    }
+  }
+}
+
+//Tablet
+@media all and (min-width: $brkTab) { 
+  #footer .container .row {
+    padding: 0;
+  }
+  #footer p, a {
+    font-size: 1.2rem;
+  }
+  .rld {
+    text-align: right;
+  }
+}

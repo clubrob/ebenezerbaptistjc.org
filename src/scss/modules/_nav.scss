@@ -1,47 +1,89 @@
 #navbar {
+  max-height: $navbarMobileHeight;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   top: 0;
-  background: rgba(255,255,255,.9);
-  height: 100px;
-  overflow: hidden;
+  background: rgba(255,255,255,.65);
+  //overflow: hidden;
   width: 100%;
-  border-bottom: 1px solid #B6B8CC;
-
-  .logo {
-    margin: 0;
-    padding: 0;
+  border-bottom: 1px solid $lightGray;
+  .row {
+    padding: 1rem 1.5rem 0;
   }
-
+  .logo {
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+    width: 240px;
+    height: 53px;
+    fill: $darkGray;
+    &:hover {
+      fill: $black;
+    }
+  }
   .nav-menu {
+    display: flex;
+    justify-content: space-between;
     li {
       display: inline-block;
       a {
-        padding: 1rem 2.1rem;
-        font-family: 'Source Sans Pro', sans-serif;
-        text-transform: uppercase;
-        text-align: center;
         display: block;
-        color: #5C5C5C;
+        padding: 1rem;
+        color: $darkGray;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1rem;
         font-weight: bold;
-        font-size: 1.4rem;
-        letter-spacing: .15em;
+        text-align: center;
+        text-transform: uppercase;
         &:hover {
           text-decoration: none;
-
-        }
-        .nav-icon {
-          display: inline-block;;
-          height: 24px;
-          width: 24px;
+          color: $black;
+          .nav-icon {
+            fill: $black;
+          }
         }
       }
     }
+    .nav-icon {
+      fill: $darkGray;
+    }
   }
 }
-#navbar>.row {
-  padding: 1.5rem 0 0;
+.nav-icon {
+  display: block;
+  height: 24px;
+  width: 24px;
+  margin: 0 auto .5rem;
 }
-#navbar>.row>.col60 {
-  text-align: right;
+
+// Medium Phone 
+@media all and (min-width: $brkMdPhone) {
+  #navbar .nav-menu li a {
+    font-size: 1.1rem;
+    letter-spacing: .1em;
+  }
+}
+
+//Tablet
+@media all and (min-width: $brkTab) { 
+  #navbar {
+    max-height: $navbarDesktopHeight;
+    .logo {
+      width: 310px;
+      height: 68px;
+    }
+    .nav-menu {
+      text-align: center;
+      li a {
+        padding: 1rem 2.1rem;
+        font-size: 1.4rem;
+        letter-spacing: .15em;
+      }
+    }
+  }
+  #navbar .row {
+    padding: 1.5rem 0 0;
+  }
+  #navbar .row .col60 {
+    text-align: right;
+  }
 }

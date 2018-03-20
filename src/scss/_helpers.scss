@@ -3,39 +3,64 @@
   min-height: 100vh;
 }
 
-//Styles for @extend
-/* .sectionHeader {
-  position: relative;
-  background-size: cover;
-  width: 100%;
-  min-height: 479px;
-  border-bottom: 1px solid #B6B8CC;
-
-  h2 {
-    position: absolute;
-    bottom: 0;
-    @extend .headlineTypography;
-    font-size: 6rem;
-    margin-bottom: .5em;
-    letter-spacing: 1px;
-    text-shadow: 2px 2px #000;
-    color: #fff;
-  }
-} */
-
-.parallax {
-  position: relative;
-  height: 100%;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+//Helper styles 
+.pull-right {
+  text-align: right;
 }
+.button {
+  display: block;
+  width: 70%;
+  padding: 1rem;
+  background-color: $blue;
+  border-radius: 15px;
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: .1em;
+  &:hover {
+    text-decoration: none;
+    background: darken($blue, 30%)
+  }
+}
+
+//Extend mixins
+@media all and (min-width: $brkTab) {
+  .parallax {
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .parallaxGap {
+    &::after {
+      display: block;
+      content: '';
+    }
+  }
+}
+  .parallaxStripe {
+    &::before {
+      position: sticky;
+      position: -webkit-sticky;
+      position: -moz-sticky;
+      position: -ms-sticky;
+      position: -o-sticky;
+      top: 0;
+      display: block;
+      content: '';
+    }
+  }
 
 .headlineTypography {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
+  font-style: italic;
   letter-spacing: .17em;
+  color: $black;
 }
 
 .responsiveEmbed {

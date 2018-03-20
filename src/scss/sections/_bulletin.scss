@@ -1,4 +1,28 @@
 #bulletin {
   @extend .parallax;
-  background-image: url('../images/ebenezerbaptistjc3.jpg');
+  @extend .parallaxGap;
+  @extend .parallaxStripe;
+  &::before {
+    background-color: $orange;
+    height: $navbarMobileHeight;
+  }
+  &::after {
+    height: 50vh;
+  }
+  .nav-icon {
+    fill: $white;
+  }
+}
+
+//Tablet
+@media all and (min-width: $brkTab) { 
+  #bulletin {
+    background-image: url('../images/ebenezerbaptistjc4.jpg');
+    &::before {
+      height: $navbarDesktopHeight;
+    }
+    &::after {
+      height: 70vh;
+    }
+  }
 }
