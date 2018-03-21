@@ -3,8 +3,8 @@
   @extend .parallaxGap;
   @extend .parallaxStripe;
   &::before {
-    background-color: $blue;
-    height: $navbarMobileHeight;
+    // background-color: $blue;
+    // height: $navbarMobileHeight;
   }
   &::after {
     height: 50vh;
@@ -14,9 +14,9 @@
 //Tablet
 @media all and (min-width: $brkTab) { 
   #about {
-    background-image: url('../images/ebenezerbaptistjc5.jpg');
     &::before {
-      height: $navbarDesktopHeight;
+      background-image: url('../images/ebenezerbaptistjc5.jpg');
+      // height: $navbarDesktopHeight;
     }
     &::after {
       height: 70vh;
