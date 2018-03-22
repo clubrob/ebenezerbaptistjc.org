@@ -1,14 +1,16 @@
 import gulp from 'gulp';
-import babel from 'gulp-babel';
 import paths from './paths';
 
 const concat = require('gulp-concat');
 
-const compileScript = gulp.task('compileScript', () =>
-  gulp.src(paths.scripts.src)
+/* const compileCustomScript = gulp.task('compileCustomScript', () =>
+  gulp.src(paths.scripts.src + 'main.js')
     .pipe(babel({
       presets: ['env'],
-    }))
+    })). */
+
+const compileScript = gulp.task('compileScript', () =>
+  gulp.src(paths.scripts.src)
     .pipe(concat('bundle.js'))
     .pipe(gulp.dest(paths.scripts.dest)));
 

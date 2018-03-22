@@ -1,5 +1,5 @@
 #contact {
-  @extend .parallaxStripe;
+  @extend .colorBar;
   &::before {
     background-color: $purple;
     z-index: 1;

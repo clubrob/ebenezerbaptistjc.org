@@ -1,7 +1,6 @@
 #events {
-  @extend .parallax;
-  @extend .parallaxGap;
-  @extend .parallaxStripe;
+  @extend .colorBar;
+  @extend .sectionBackground;
   &::before {
     background-color: $green;
     z-index: 1;
@@ -33,11 +32,11 @@
 //Tablet
 @media all and (min-width: $brkTab) { 
   #events {
-    background-image: url('../images/ebenezerbaptistjc3.jpg');
     &::before {
       height: $navbarDesktopHeight;
     }
     &::after {
+      background-image: url('../images/ebenezerbaptistjc3.jpg');
       height: 70vh;
     }
     .cal-col {

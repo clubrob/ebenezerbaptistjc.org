@@ -1,10 +1,9 @@
 #about {
-  @extend .parallax;
-  @extend .parallaxGap;
-  @extend .parallaxStripe;
+  @extend .colorBar;
+  @extend .sectionBackground;
   &::before {
-    // background-color: $blue;
-    // height: $navbarMobileHeight;
+    background-color: $blue;
+    height: $navbarMobileHeight;
   }
   &::after {
     height: 50vh;
@@ -15,10 +14,10 @@
 @media all and (min-width: $brkTab) { 
   #about {
     &::before {
-      background-image: url('../images/ebenezerbaptistjc5.jpg');
-      // height: $navbarDesktopHeight;
+      height: $navbarDesktopHeight;
     }
     &::after {
+      background-image: url('../images/ebenezerbaptistjc5.jpg');
       height: 70vh;
     }
   }

@@ -1,8 +1,8 @@
 #splash {
   @extend .parallax;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url('../images/ebenezerbaptistjc.jpg');
+  &::before {
+    background-image: url('../images/ebenezerbaptistjc.jpg');
+  }
   .splash-box {
     position: relative;
     height: 100vh;
