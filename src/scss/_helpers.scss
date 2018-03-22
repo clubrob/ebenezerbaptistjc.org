@@ -2,7 +2,6 @@
 .section {
   min-height: 100vh;
 }
-
 //Helper styles 
 .pull-right {
   text-align: right;
@@ -31,6 +30,8 @@
     content: '';
     display: block;
     width: 100%;
+    position: sticky;
+    top: 0;
   }
 }
 .sectionBackground {
@@ -46,7 +47,7 @@
 .parallax {
   &::before {
     content: '';
-    position: fixed; // instead of background-attachment
+    position: fixed;
     width: 100%;
     height: 100%;
     top: 0;

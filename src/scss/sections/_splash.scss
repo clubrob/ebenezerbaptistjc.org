@@ -1,7 +1,16 @@
-#splash {
-  @extend .parallax;
+#home {
   &::before {
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     background-image: url('../images/ebenezerbaptistjc.jpg');
+    z-index: -1;
   }
   .splash-box {
     position: relative;
@@ -34,7 +43,7 @@
 
 //Tablet
 @media all and (min-width: $brkTab) { 
-  #splash {
+  #home {
     .splash-box {
       .splash-verse {
         right: 10%;

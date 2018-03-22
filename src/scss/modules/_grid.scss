@@ -21,6 +21,7 @@
 //Tablet
 @media all and (min-width: $brkTab) { 
   .row {
+      -js-display: flex;
       display: flex;
       justify-content: space-between;
       padding: 0 3rem 2rem 3rem;

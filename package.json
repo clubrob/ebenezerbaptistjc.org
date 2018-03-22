@@ -8,15 +8,17 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "gulp --require babel-register --gulpfile tasks",
     "build": "NODE_ENV=production gulp build --require babel-register --gulpfile tasks",
-    "svg": "gulp svg --require babel-register --gulpfile tasks"
+    "imagemin": "gulp imagemin --require babel-register --gulpfile tasks"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.42",
+    "@babel/preset-env": "^7.0.0-beta.42",
     "@babel/register": "^7.0.0-beta.42",
     "ajv": "^5.5.2",
     "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
     "browser-sync": "^2.23.6",
@@ -37,9 +39,11 @@
     "gulp-svg-sprites": "^4.1.2",
     "gulp-svg-symbols": "^3.1.0",
     "gulp-svgmin": "^1.2.4",
-    "gulp-uglify": "^3.0.0"
+    "gulp-uglify": "^3.0.0",
+    "webpack-stream": "^4.0.2"
   },
   "dependencies": {
+    "jquery": "^3.3.1",
     "normalize.css": "^8.0.0"
   }
 }

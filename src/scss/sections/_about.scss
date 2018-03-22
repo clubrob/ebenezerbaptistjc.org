@@ -6,7 +6,7 @@
     height: $navbarMobileHeight;
   }
   &::after {
-    height: 50vh;
+    height: 30vh;
   }
 }
 
@@ -19,6 +19,9 @@
     &::after {
       background-image: url('../images/ebenezerbaptistjc5.jpg');
       height: 70vh;
+    }
+    p {
+      max-width: 1000px;
     }
   }
 }
