@@ -4,9 +4,6 @@ import gulp from 'gulp';
 // import uglify from 'gulp-uglify';
 import paths from './paths';
 
-// const babelPath = `${paths.scripts.root}/modules/**/*.js`;
-// const babelDest = paths.scripts.root;
-const webpackEntry = `${paths.scripts.root}/entry.js`;
 const finalDest = paths.scripts.dest;
 
 gulp.task('bundleUp', () =>
