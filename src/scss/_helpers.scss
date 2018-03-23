@@ -1,10 +1,15 @@
 //Base Styles
 .section {
   min-height: 100vh;
+  background-color: $white;
 }
 //Helper styles 
 .pull-right {
   text-align: right;
+}
+.hide-md { display: none; }
+@media all and (min-width: $brkTab) { 
+  .hide-md { display: inline; }
 }
 .button {
   display: block;
@@ -30,6 +35,8 @@
     content: '';
     display: block;
     width: 100%;
+    position: -webkit-sticky;
+    position: -ms-sticky;
     position: sticky;
     top: 0;
   }

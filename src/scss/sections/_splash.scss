@@ -1,4 +1,5 @@
 #home {
+  background-color: transparent;
   &::before {
     content: '';
     position: fixed;
@@ -46,15 +47,15 @@
   #home {
     .splash-box {
       .splash-verse {
-        right: 10%;
+        /* right: 10%;
         bottom: 100px;
-        width: 50%;
+        width: 50%; */
         .verse {
           blockquote {
-            font-size: 4.6rem;
+            /* font-size: 4.6rem; */
           }
           figcaption {
-            font-size: 1.3rem;
+            /* font-size: 1.3rem; */
           }
         }
       }

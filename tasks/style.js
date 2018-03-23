@@ -15,4 +15,12 @@ const compileStyle = gulp.task('compileStyle', () =>
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.styles.dest)));
 
-export default compileStyle;
+const compileStyleProd = gulp.task('compileStyleProd', () =>
+  gulp.src(paths.styles.src)
+    .pipe(sass({
+      includePaths: [paths.node.src],
+    })).on('error', sass.logError)
+    .pipe(cleanCSS())
+    .pipe(gulp.dest(paths.styles.dest)));
+
+export { compileStyleProd, compileStyle };
