@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "name": "ebenezer-baptist-jc",
+  "alias": [
+    "ebenezerbaptistjc.org",
+    "www.ebenezerbaptistjc.org"
+  ],
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ]
+}

@@ -5,11 +5,9 @@
   "repository": {},
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "gulp --require babel-register --gulpfile tasks",
-    "build": "NODE_ENV=production gulp build --require babel-register --gulpfile tasks",
-    "imagemin": "gulp imagemin --require babel-register --gulpfile tasks",
-    "production": "gulp production --require babel-register --gulpfile tasks"
+    "dev": "gulp serve",
+    "build": "gulp build",
+    "now-build": "gulp build"
   },
   "author": "",
   "license": "ISC",
