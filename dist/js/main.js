@@ -1,1 +1,0 @@
-flexibility(document.querySelector('.row'));
